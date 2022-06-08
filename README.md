@@ -1,2 +1,2 @@
-# google-maps-web-js-api-wrappers-ogc-arcgis
-Google maps web JavaScript API wrappers for OGC (WMS, WFS, ...), ArcGIS & other Geospatial map services/ resources
+# hyvlayers
+Google Maps Platform Web JavaScript API Wrappers for OGC (WMS, WFS, ...), ArcGIS (REST, OGC enabled, ...) & other Geospatial Map Services/ Layers/ Resources
