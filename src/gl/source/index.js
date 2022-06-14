@@ -1,0 +1,1 @@
+export { default as TileWMS, tileWMS } from './TileWMS';

@@ -1,0 +1,44 @@
+{
+  "name": "golayers",
+  "version": "1.0.0",
+  "description": "Google Maps JavaScript Web API Extensions/ Wrappers for OGC (WMS, WFS, ...), ArcGIS (REST, OGC enabled, ...) & other Geospatial Map Services/ Layers/ Resources.",
+  "main": "dist/golayers-src.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "npm run rollup && npm run uglify",
+    "rollup": "rollup -c build/rollup.config.js",
+    "uglify": "uglifyjs dist/golayers-src.js -c -m -o dist/golayers.js --source-map filename=dist/golayers.js.map --source-map content=dist/golayers-src.js.map --source-map url=golayers.js.map --comments"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmsmdali/golayers-web.git"
+  },
+  "keywords": [
+    "google",
+    "ogc",
+    "arcgis",
+    "gis",
+    "map"
+  ],
+  "author": "Mohamed Ali",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/mmsmdali/golayers-web/issues"
+  },
+  "homepage": "https://github.com/mmsmdali/golayers-web#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "git-rev-sync": "^3.0.2",
+    "nodemon": "^2.0.16",
+    "pm2": "^5.2.0",
+    "rollup": "^2.75.6",
+    "rollup-plugin-git-version": "^0.3.1",
+    "uglify-js": "^3.16.0"
+  },
+  "dependencies": {
+    "proj4": "^2.8.0"
+  }
+}
